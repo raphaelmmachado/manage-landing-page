@@ -11,8 +11,16 @@
 </head>
 
 <body>
-  <main id="app">
-    <nav class="flex flex-row flex-wrap justify-around gap-4 mt-8 mb-14">
+  <main id="app" class="relative">
+    <nav class="absolute hide side-nav rounded-2xl opacity-20 bg-dark-blue pt-8 mt-8
+     text-very-light-gray" data-side-nav>
+      <div class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">Pricing</div>
+      <div class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">Product</div>
+      <div class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">About Us</div>
+      <div class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">Carreers</div>
+      <div class="pl-3 hover:cursor-pointer  hover:opacity-90">Community</div>
+    </nav>
+    <nav class="relative flex flex-row justify-between md:justify-around gap-4 mt-8 mb-14">
       <div><img src="./images/logo.svg" alt="logo"></div>
       <div class="hidden md:flex flex-row justify-evenly text-dark-blue font-semibold">
         <div class="px-1 hover:cursor-pointer">Pricing</div>
@@ -21,13 +29,17 @@
         <div class="px-1 hover:cursor-pointer">Carreers</div>
         <div class="px-1 hover:cursor-pointer">Community</div>
       </div>
-      <div>
-        <button
-          class="hidden md:inline-block bg-bright-red rounded-3xl hover:bg-opacity-95 text-very-pale-red px-4 py-1 shadow-xl">Get
-          Started</button>
+      <div
+        class="hidden md:inline-block bg-bright-red rounded-3xl hover:bg-opacity-95 text-very-pale-red px-4 py-1 shadow-xl">
+        <button>Get Started</button>
       </div>
-      <div class="inline-block md:hidden hover:opacity-80 hover:cursor-pointer"><img src="./images/icon-hamburger.svg"
-          alt="hamburguer">
+      <div class="absolute ml-8 right-[10vw] inline-block md:hidden hover:opacity-80 hover:cursor-pointer"
+        data-hamburguer>
+        <img src="./images/icon-hamburger.svg" alt="hamburguer">
+      </div>
+      <div class="hide absolute ml-8 right-[10vw]  inline-block md:hidden hover:opacity-80 hover:cursor-pointer"
+        data-close>
+        <img src="./images/icon-close.svg" alt="close">
       </div>
     </nav>
     <section class="flex flex-col md:flex-row items-center justify-around gap-8 mt-4 mb-14">
@@ -46,8 +58,9 @@
     </section>
     <section id="list-section" class="flex flex-col md:flex-row justify-around">
       <div class="max-w-md m-4">
-        <h3 class="font-bold text-2xl text-dark-blue">What`s the difference about Manage?</h3>
-        <p class="text-dark-grayish-blue text-sm">Manage provides all the funcionality your team needs, without the
+        <h3 class="font-bold text-2xl md:text-3xl text-dark-blue mb-4">What`s the difference about Manage?</h3>
+        <p class="text-dark-grayish-blue text-sm md:text-md mb-8">Manage provides all the funcionality your team needs,
+          without the
           complexity.
           Our software is tailor-made for
           modern digital product teams.</p>
@@ -80,7 +93,7 @@
       </div>
     </section>
     <section id="carousel-section" class="flex flex-col items-center justify-evenly">
-      <h2 class="text-2xl text-dark-blue font-bold text-center">What they`ve said</h2>
+      <h2 class="text-3xl text-dark-blue font-bold text-center">What they`ve said</h2>
       <div id="carousel" data-carousel>
         <div class="icon" id="icon-back" data-button="prev"><img src="./images/chevron-back-outline.svg" alt="back">
         </div>
@@ -175,3 +188,5 @@
 </body>
 
 </html>
+<!-- TODO NAVBAR HAMBURGUER
+TODO SLIDER -->

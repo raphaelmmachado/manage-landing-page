@@ -26,3 +26,43 @@ submitButton.addEventListener("click", (e) => {
     alert(`Thanks for subscribing!`);
   } else return;
 });
+
+const hamburguerButton = document.querySelector("[data-hamburguer]");
+const closeButton = document.querySelector("[data-close]");
+const sideNav = document.querySelector("[data-side-nav]");
+// window.onresize = () => {
+//   if (window.innerWidth > 768) {
+//     sideNav.classList.add("hide");
+//     closeButton.classList.add("hide");
+//     hamburguerButton.classList.remove("hide");
+//   }
+// };
+hamburguerButton.addEventListener("click", () => {
+  // rotateHamburguer();
+  sideNav.classList.remove("hide");
+  hamburguerButton.classList.add("hide");
+  closeButton.classList.remove("hide");
+});
+closeButton.addEventListener("click", () => {
+  hamburguerButton.classList.remove("hide");
+  closeButton.classList.add("hide");
+  sideNav.classList.add("hide");
+});
+
+// let rotation = 0;
+// let angle = 90;
+// let rotate = true;
+
+// const rotateHamburguer = () => {
+//   // rotation = (rotation + angle) % 360;
+//   // hamburguerButton.style.transition = "200ms rotate ease-in-out";
+//   // hamburguerButton.style.rotate = `${rotation}deg`;
+//   rotate === false ? (rotate = true) : (rotate = false);
+//   if (!rotate) {
+//     hamburguerButton.classList.add("rotate-90");
+//     hamburguerButton.classList.remove("rotate-0");
+//   } else {
+//     hamburguerButton.classList.add("rotate-0");
+//     hamburguerButton.classList.remove("rotate-90");
+//   }
+// };
