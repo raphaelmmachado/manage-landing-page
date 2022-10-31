@@ -24,7 +24,7 @@ submitButton.addEventListener("click", (e) => {
     alert("Email is empty!");
   } else if (emailInput.value.includes("@")) {
     alert(`Thanks for subscribing!`);
-  } else return;
+  } else alert("Enter your email correctly!");
 });
 
 const hamburguerButton = document.querySelector("[data-hamburguer]");
