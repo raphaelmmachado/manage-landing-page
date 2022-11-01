@@ -21,22 +21,23 @@ const submitButton = document.querySelector("[data-submit-email-button]");
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   if (emailInput.value === "") {
-    alert("Email is empty!");
+    alert("You can not submit an empty email!");
   } else if (emailInput.value.includes("@")) {
     alert(`Thanks for subscribing!`);
-  } else alert("Enter your email correctly!");
+  } else alert("Please, Insert a valid email!");
 });
 
 const hamburguerButton = document.querySelector("[data-hamburguer]");
 const closeButton = document.querySelector("[data-close]");
 const sideNav = document.querySelector("[data-side-nav]");
-// window.onresize = () => {
-//   if (window.innerWidth > 768) {
-//     sideNav.classList.add("hide");
-//     closeButton.classList.add("hide");
-//     hamburguerButton.classList.remove("hide");
-//   }
-// };
+
+window.onresize = () => {
+  if (window.innerWidth > 768) {
+    sideNav.classList.add("hide");
+    closeButton.classList.add("hide");
+    hamburguerButton.classList.remove("hide");
+  }
+};
 hamburguerButton.addEventListener("click", () => {
   // rotateHamburguer();
   sideNav.classList.remove("hide");

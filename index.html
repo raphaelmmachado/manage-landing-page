@@ -11,44 +11,48 @@
 </head>
 
 <body>
-  <main id="app" class="relative">
-    <nav class="absolute hide side-nav rounded-2xl opacity-20 bg-dark-blue pt-8 mt-8
-     text-very-light-gray" data-side-nav>
-      <div class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">Pricing</div>
-      <div class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">Product</div>
-      <div class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">About Us</div>
-      <div class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">Carreers</div>
-      <div class="pl-3 hover:cursor-pointer  hover:opacity-90">Community</div>
-    </nav>
-    <nav class="relative flex flex-row justify-between md:justify-around gap-4 mt-8 mb-14">
-      <div class="ml-8 md:ml-0"><img src="./images/logo.svg" alt="logo"></div>
-      <div class="hidden md:flex flex-row justify-evenly text-dark-blue font-semibold">
-        <div class="px-1 hover:cursor-pointer">Pricing</div>
-        <div class="px-1 hover:cursor-pointer">Product</div>
-        <div class="px-1 hover:cursor-pointer">About Us</div>
-        <div class="px-1 hover:cursor-pointer">Carreers</div>
-        <div class="px-1 hover:cursor-pointer">Community</div>
-      </div>
-      <div
-        class="hidden md:inline-block bg-bright-red rounded-3xl hover:bg-opacity-95 text-very-pale-red px-4 py-1 shadow-xl">
-        <button>Get Started</button>
-      </div>
-      <div class="absolute ml-8 right-[10vw] inline-block md:hidden hover:opacity-80 hover:cursor-pointer"
-        data-hamburguer>
-        <img src="./images/icon-hamburger.svg" alt="hamburguer">
-      </div>
-      <div class="hide absolute ml-8 right-[10vw]  inline-block md:hidden hover:opacity-80 hover:cursor-pointer"
-        data-close>
-        <img src="./images/icon-close.svg" alt="close">
-      </div>
-    </nav>
-    <section class="flex flex-col md:flex-row items-center justify-around gap-8 mt-4 mb-14">
+  <main id="app" class="">
+    <header>
+      <nav class="relative flex flex-row justify-between md:justify-around gap-4 mt-8 md:mb-8">
+        <div class="ml-8 md:ml-0 hover:cursor-pointer"><img src="./images/logo.svg" alt="logo"></div>
+        <div class="hidden md:flex flex-row justify-evenly text-dark-blue font-semibold">
+          <h3 class="px-1 hover:cursor-pointer">Pricing</h3>
+          <h3 class="px-1 hover:cursor-pointer">Product</h3>
+          <h3 class="px-1 hover:cursor-pointer">About Us</h3>
+          <h3 class="px-1 hover:cursor-pointer">Careers</h3>
+          <h3 class="px-1 hover:cursor-pointer">Community</h3>
+        </div>
+        <div
+          class="hidden md:inline-block bg-bright-red rounded-3xl hover:bg-opacity-95 text-very-pale-red px-4 py-1 shadow-xl">
+          <button>Get Started</button>
+        </div>
+        <div class="absolute ml-8 right-[10vw] inline-block md:hidden hover:opacity-80 hover:cursor-pointer"
+          data-hamburguer>
+          <img src="./images/icon-hamburger.svg" alt="hamburguer">
+        </div>
+        <div class="hide absolute ml-8 right-[10vw]  inline-block md:hidden hover:opacity-80 hover:cursor-pointer"
+          data-close>
+          <img src="./images/icon-close.svg" alt="close">
+        </div>
+      </nav>
+    </header>
+    <div class="flex flex-col items-center justify-center">
+      <nav class="hide side-nav rounded-2xl opacity-20 bg-very-pale-red mt-8
+     text-dark-blue font-semibold" data-side-nav>
+        <h3 class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">Pricing</h3>
+        <h3 class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">Product</h3>
+        <h3 class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">About Us</h3>
+        <h3 class="pl-3 pb-4 hover:cursor-pointer hover:opacity-90">Careers</h3>
+        <h3 class="pl-3 hover:cursor-pointer  hover:opacity-90">Community</h3>
+      </nav>
+    </div>
+    <section class="flex flex-col-reverse md:flex-row items-center justify-around gap-8 mx-4 mt-4 mb-14">
       <div class="max-w-md flex flex-col justify-center">
-        <h2 class="text-dark-blue text-5xl font-bold my-4">Bring everyone together to build better products</h2>
+        <h1 class="text-dark-blue text-5xl font-bold my-4">Bring everyone together to build better products</h1>
         <p class="my-4 text-dark-grayish-blue text-md">Manage makes it simple for software teams to plan day-to-day
           tasks while
           keeping large teams
-          goals in view
+          goals in view.
         </p>
         <button
           class="bg-bright-red rounded-3xl hover:bg-opacity-95 self-center sm:self-start text-very-pale-red shadow-2xl px-4 py-1">Get
@@ -56,19 +60,19 @@
       </div>
       <div class="max-w-md"><img src="./images/illustration-intro.svg" alt=""></div>
     </section>
-    <section id="list-section" class="flex flex-col md:flex-row justify-around">
-      <div class="max-w-md m-4">
-        <h3 class="font-bold text-2xl md:text-3xl text-dark-blue mb-4">What`s the difference about Manage?</h3>
+    <section id="list-section" class="flex flex-col md:flex-row items-start justify-around">
+      <div class="max-w-md m-4 self-center md:self-auto">
+        <h2 class="font-bold text-2xl md:text-3xl text-dark-blue mb-4">What`s the difference about Manage?</h2>
         <p class="text-dark-grayish-blue text-sm md:text-md mb-8">Manage provides all the funcionality your team needs,
           without the
           complexity.
           Our software is tailor-made for
           modern digital product teams.</p>
       </div>
-      <div class="max-w-md ml-16 ">
+      <div class="max-w-md ml-16 self-start md:self-auto">
         <ol class="list-decimal list-outside">
           <li class="list-item mb-8">
-            <h4 class="font-bold text-md text-dark-blue mb-2">Track company-wide progress</h4>
+            <h2 class="font-bold text-md text-dark-blue mb-2">Track company-wide progress</h2>
             <p class="text-dark-grayish-blue text-sm"> See how your day-to-day tasks fit into the wider vision.</p>
             <p class="text-dark-grayish-blue text-sm">Go from tracking progress at he milestone level all the wy done to
               the
@@ -76,14 +80,14 @@
               sight of the bigger picture again.</p>
           </li>
           <li class="list-item  mb-8">
-            <h4 class="font-bold text-md text-dark-blue mb-2">Advanced built-in reports</h4>
+            <h3 class="font-bold text-md text-dark-blue mb-2">Advanced built-in reports</h3>
             <p class="text-dark-grayish-blue text-sm">Set internal delivery estimates and track progress toward company
               goals.
               Our customisable dashboard helps
               you build out the reports you need to keep key stakeholders informed.</p>
           </li>
           <li class="list-item mb-8">
-            <h4 class="font-bold text-md text-dark-blue  mb-2">Everything you need in one place</h4>
+            <h3 class="font-bold text-md text-dark-blue  mb-2">Everything you need in one place</h3>
             <p class="text-dark-grayish-blue text-sm">Stop jumping from one service to another to comunicate, store
               files, track
               tasks and share documents.
@@ -102,26 +106,26 @@
         <ul data-slides>
           <li data-active class="slide flex flex-col items-center justify-around max-w-md">
             <div class="w-16"><img class="w-full block" src="./images/avatar-anisha.png" alt="Anisha Li"></div>
-            <h4 class="text-dark-blue font-bold text-center text-md">Anisha Li</h4>
+            <h3 class="text-dark-blue font-bold text-center text-md">Anisha Li</h3>
             <p class="text-dark-grayish-blue text-sm text-center">"Manage supercharged our team`s workflow. The lorem
               ipsum visibility on larger milestones at all times lorem ipsum keeps everyone motivated."
             </p>
           </li>
           <li class="slide flex flex-col items-center justify-around max-w-md">
             <div class="w-16"><img class="w-full block" src="./images/avatar-ali.png" alt="Anisha Li"></div>
-            <h4 class="text-dark-blue font-bold text-center text-md">Ali Bravo</h4>
+            <h3 class="text-dark-blue font-bold text-center text-md">Ali Bravo</h3>
             <p class="text-dark-grayish-blue text-sm text-center">"We have been able to cancel so many other
               subscriptions since using Manage. There is no more cross-channel and everyone is much more focused."</p>
           </li>
           <li class="slide flex flex-col items-center justify-around max-w-md">
             <div class="w-16"><img class="w-full block" src="./images/avatar-richard.png" alt="Anisha Li"></div>
-            <h4 class="text-dark-blue font-bold text-center text-md">Richard Watts</h4>
+            <h3 class="text-dark-blue font-bold text-center text-md">Richard Watts</h3>
             <p class="text-dark-grayish-blue text-sm text-center">"Manage allow us to provide structure and lorem ipsum
               keep us organized and focused. I can`t stop recommend them to everyone i talk to!"</p>
           </li>
           <li class="slide flex flex-col items-center justify-around max-w-md">
             <div class="w-16"><img class="w-full block" src="./images/avatar-shanai.png" alt="Anisha Li"></div>
-            <h4 class="text-dark-blue font-bold text-center text-md">Shanai</h4>
+            <h3 class="text-dark-blue font-bold text-center text-md">Shanai</h3>
             <p class="text-dark-grayish-blue text-sm text-center">Lorem, ipsum dolor sit amet consectetur adipisicing
               elit. Quibusdam reiciendis enim nobis suscipit sapiente incidunt vel iste necessitatibus? Reprehenderit
               nihil debitis rerum eius tempora numquam ad quia aut magnam repellendus!</p>
@@ -135,21 +139,19 @@
     </section>
     <footer>
       <section id="orange-footer" class="bg-bright-red flex flex-row items-center justify-around px-2">
-        <div class="max-w-[300px]">
-          <h3 class="text-very-pale-red text-2xl font-semibold">Simplify how your team works today.</h3>
-        </div>
-        <div> <button class="text-bright-red rounded-3xl bg-very-pale-red shadow-lg
+        <h3 class="text-very-pale-red text-2xl font-semibold max-w-[300px]">Simplify how your team works
+          today.</h3>
+        <button class="text-bright-red rounded-3xl bg-very-pale-red shadow-lg
            px-4 py-1 active:text-very-pale-red hover:opacity-80 active:bg-bright-red">Get Started</button>
-        </div>
       </section>
-      <section id="black-footer"
+      <section id="dark-footer"
         class="relative bg-very-dark-blue flex flex-col-reverse xs:flex-row flex-wrap gap-4 justify-around items-center min-w-full">
         <div class="min-h-[8rem] flex flex-col-reverse xs:flex-col justify-around">
           <div class="text-[0.6rem] text-dark-grayish-blue text-center block xs:hidden">
             Copyright 2020. All
             rights deserved.
           </div>
-          <div><img src="./images/logo.svg" alt="logo"></div>
+          <div><img src="./images/logo.svg" class="fill-very-pale-red" alt="logo"></div>
           <div id="social-media-links" class="flex flex-row">
             <img src="./images/icon-facebook.svg" class=" hover:opacity-50 hover:cursor-pointer" alt="facebook">
             <img src="./images/icon-instagram.svg" class=" hover:opacity-50 hover:cursor-pointer" alt="instagram">
@@ -160,15 +162,15 @@
         </div>
         <div class="flex flex-row gap-8">
           <div class="text-very-light-gray flex flex-col justify-around min-h-[6rem]">
-            <div class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Home</div>
-            <div class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Pricing</div>
-            <div class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Products</div>
-            <div class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">About Us</div>
+            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Home</p>
+            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Pricing</p>
+            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Products</p>
+            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">About Us</p>
           </div>
           <div class="text-very-light-gray flex flex-col justify-around min-h-[6rem]">
-            <div class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Careers</div>
-            <div class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Community</div>
-            <div class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Privacy Policy</div>
+            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Careers</p>
+            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Community</p>
+            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Privacy Policy</p>
           </div>
         </div>
         <div class="flex flex-col justify-center xs:justify-between min-h-[6rem] p-2">
@@ -179,7 +181,7 @@
           </form>
           <div class="text-[0.6rem] text-dark-grayish-blue xs:self-end hidden xs:inline-block">
             Copyright 2020. All
-            rights deserved.
+            Rights Reserved.
           </div>
         </div>
       </section>
@@ -188,4 +190,3 @@
 </body>
 
 </html>
-<!-- TODO SLIDER -->
