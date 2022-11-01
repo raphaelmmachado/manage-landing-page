@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://manage-landing-page-rm0909.netlify.app/)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/manage-landing-page-with-tailwind-N2e_Vx-In8)
+- Live Site URL: [netlify site](https://manage-landing-page-rm0909.netlify.app/)
 
 ## My process
 
