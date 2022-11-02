@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./images/favicon-32x32.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css">
   <script type="module" src="/main.js" defer></script>
@@ -13,19 +13,17 @@
 <body>
   <main id="app" class="">
     <header>
-      <nav class="relative flex flex-row justify-between md:justify-around gap-4 mt-8 md:mb-8">
-        <div class="ml-8 md:ml-0 hover:cursor-pointer"><img src="./images/logo.svg" alt="logo"></div>
-        <div class="hidden md:flex flex-row justify-evenly text-dark-blue font-semibold">
-          <h3 class="px-1 hover:cursor-pointer">Pricing</h3>
-          <h3 class="px-1 hover:cursor-pointer">Product</h3>
-          <h3 class="px-1 hover:cursor-pointer">About Us</h3>
-          <h3 class="px-1 hover:cursor-pointer">Careers</h3>
-          <h3 class="px-1 hover:cursor-pointer">Community</h3>
+      <nav class="relative flex items-center flex-row justify-between md:justify-around mt-8 md:mb-8">
+        <div class="ml-8 md:ml-0 hover:cursor-pointer "><img src="./images/logo.svg" alt="logo"></div>
+        <div class="hidden md:flex text-sm flex-row justify-evenly text-dark-blue font-medium">
+          <h3 class="px-2 hover:cursor-pointer hover:opacity-90">Pricing</h3>
+          <h3 class="px-2 hover:cursor-pointer hover:opacity-90">Product</h3>
+          <h3 class="px-2 hover:cursor-pointer hover:opacity-90">About Us</h3>
+          <h3 class="px-2 hover:cursor-pointer hover:opacity-90">Careers</h3>
+          <h3 class="px-2 hover:cursor-pointer hover:opacity-90">Community</h3>
         </div>
-        <div
-          class="hidden md:inline-block bg-bright-red rounded-3xl hover:bg-opacity-95 text-very-pale-red px-4 py-1 shadow-xl">
-          <button>Get Started</button>
-        </div>
+        <button class="hidden md:inline-block  bg-bright-red rounded-3xl hover:bg-opacity-95
+          text-very-pale-red px-4 py-1 shadow-xl cursor-pointer">Get Started</button>
         <div class="absolute ml-8 right-[10vw] inline-block md:hidden hover:opacity-80 hover:cursor-pointer"
           data-hamburguer>
           <img src="./images/icon-hamburger.svg" alt="hamburguer">
@@ -96,46 +94,56 @@
         </ol>
       </div>
     </section>
-    <section id="carousel-section" class="flex flex-col items-center justify-evenly">
-      <h2 class="text-3xl text-dark-blue font-bold text-center">What they`ve said</h2>
-      <div id="carousel" data-carousel>
-        <div class="icon" id="icon-back" data-button="prev"><img src="./images/chevron-back-outline.svg" alt="back">
-        </div>
-        <div class="icon" id="icon-fwrd" data-button="next"><img src="./images/chevron-forward-outline.svg"
-            alt="foward"></div>
-        <ul data-slides>
-          <li data-active class="slide flex flex-col items-center justify-around max-w-md">
+    <section id="testimonials" class="flex flex-col items-center justify-around min-h-[500px] my-4 md:mb-14">
+      <h2 class="text-center text-2xl font-semibold text-dark-blue">What they've said</h2>
+      <div class="swiper mx-auto">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper  cursor-grab active:cursor-grabbing lg:cursor-default lg:active:cursor-default">
+          <!-- Slides -->
+          <div class="swiper-slide slide">
             <div class="w-16"><img class="w-full block" src="./images/avatar-anisha.png" alt="Anisha Li"></div>
             <h3 class="text-dark-blue font-bold text-center text-md">Anisha Li</h3>
-            <p class="text-dark-grayish-blue text-sm text-center">"Manage supercharged our team`s workflow. The lorem
-              ipsum visibility on larger milestones at all times lorem ipsum keeps everyone motivated."
+            <p class="text-dark-grayish-blue text-sm text-center">"Manage has supercharged our team`s workflow.
+              The ability to maintain visibility on larger milestones at all times keeps everyone
+              motivated."
             </p>
-          </li>
-          <li class="slide flex flex-col items-center justify-around max-w-md">
+          </div>
+
+          <div class="swiper-slide">
             <div class="w-16"><img class="w-full block" src="./images/avatar-ali.png" alt="Anisha Li"></div>
             <h3 class="text-dark-blue font-bold text-center text-md">Ali Bravo</h3>
             <p class="text-dark-grayish-blue text-sm text-center">"We have been able to cancel so many other
-              subscriptions since using Manage. There is no more cross-channel and everyone is much more focused."</p>
-          </li>
-          <li class="slide flex flex-col items-center justify-around max-w-md">
+              subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more
+              focused."</p>
+          </div>
+
+          <div class="swiper-slide">
             <div class="w-16"><img class="w-full block" src="./images/avatar-richard.png" alt="Anisha Li"></div>
             <h3 class="text-dark-blue font-bold text-center text-md">Richard Watts</h3>
-            <p class="text-dark-grayish-blue text-sm text-center">"Manage allow us to provide structure and lorem ipsum
-              keep us organized and focused. I can`t stop recommend them to everyone i talk to!"</p>
-          </li>
-          <li class="slide flex flex-col items-center justify-around max-w-md">
+            <p class="text-dark-grayish-blue text-sm text-center">"Manage allow us to provide structure and process.
+              It keep us organized and focused. I can`t stop recommending them to everyone i talk to!"</p>
+          </div>
+
+          <div class="swiper-slide">
             <div class="w-16"><img class="w-full block" src="./images/avatar-shanai.png" alt="Anisha Li"></div>
-            <h3 class="text-dark-blue font-bold text-center text-md">Shanai</h3>
-            <p class="text-dark-grayish-blue text-sm text-center">Lorem, ipsum dolor sit amet consectetur adipisicing
-              elit. Quibusdam reiciendis enim nobis suscipit sapiente incidunt vel iste necessitatibus? Reprehenderit
-              nihil debitis rerum eius tempora numquam ad quia aut magnam repellendus!</p>
-          </li>
-        </ul>
+            <h3 class="text-dark-blue font-bold text-center text-md">Shanai Gough</h3>
+            <p class="text-dark-grayish-blue text-sm text-center">"They software allows us track, manage and
+              colllaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive."</p>
+          </div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
-      <div>
-        <button class="bg-bright-red hover:opacity-95  rounded-3xl text-very-pale-red shadow-lg px-4 py-1">Get
-          Started</button>
-      </div>
+      <button class="bg-bright-red text-very-light-gray px-4 py-1 rounded-2xl shadow-2xl hover:opacity-90">Get
+        Started</button>
     </section>
     <footer>
       <section id="orange-footer" class="bg-bright-red flex flex-row items-center justify-around px-2">
@@ -162,15 +170,15 @@
         </div>
         <div class="flex flex-row gap-8">
           <div class="text-very-light-gray flex flex-col justify-around min-h-[6rem]">
-            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Home</p>
-            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Pricing</p>
-            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Products</p>
-            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">About Us</p>
+            <h3 class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Home</h3>
+            <h3 class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Pricing</h3>
+            <h3 class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Products</h3>
+            <h3 class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">About Us</h3>
           </div>
           <div class="text-very-light-gray flex flex-col justify-around min-h-[6rem]">
-            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Careers</p>
-            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Community</p>
-            <p class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Privacy Policy</p>
+            <h3 class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Careers</h3>
+            <h3 class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Community</h3>
+            <h3 class="pb-1 text-xs hover:opacity-50 hover:cursor-pointer">Privacy Policy</h3>
           </div>
         </div>
         <div class="flex flex-col justify-center xs:justify-between min-h-[6rem] p-2">
