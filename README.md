@@ -45,6 +45,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Mobile-first workflow
+- [Swiper JS](https://swiperjs.com/) - Touch Slider
 - [Tailwind](https://tailwindcss.com/) - JS library
 - [Vite](https://vitejs.dev/) - Vite
 
@@ -59,6 +60,7 @@ I plan to build more projects using vanilla javascript and improve myself more w
 ### Useful resources
 
 - [Webdev Simplified](https://www.youtube.com/watch?v=9HcxHDS2w1s) - This video helped me building the slider.
+EDIT - i replaced this slider for swiper js.
 
 ## Author
 
