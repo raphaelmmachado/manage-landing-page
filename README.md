@@ -55,7 +55,7 @@ I learned to create a slider with javascript.
 
 ### Continued development
 
-I plan to build more projects using vanilla javascript and improve myself more with css animations so I don't get too dependent on frameworks
+I plan to build more projects using vanilla javascript so i don't get too dependent on frameworks
 
 ### Useful resources
 
